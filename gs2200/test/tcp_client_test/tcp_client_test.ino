@@ -227,12 +227,12 @@ void loop(void) {
   string ="AT+WM=0";
   send_atcommand(string);
 
-  string ="AT+WA=xxxxxxxxx,,11"; /* Set your SSID */
-  send_atcommand(string);
-  
   string ="AT+WWPA=xxxxxxxxx"; /* Set your passphase */
   send_atcommand(string);
 
+  string ="AT+WA=xxxxxxxxx"; /* Set your SSID */
+  send_atcommand(string);
+  
   string ="AT+NDHCP=1";
   send_atcommand(string);
 
